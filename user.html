@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="webapp.css">
+</head>
+<body onload="displayusers  ()">
+    <div class='container'>
+        
+        hello,<p id="admin_name"></p>
+        <a href="dashboard.html">DashBoard</a><br>
+        <a href="user.html" >Users</a><br>
+        <a href="usersession.html">Login Session</a><br>
+        <a href="login.html">Logout</a><br>
+    </div>
+  <div class="users">
+    <form>
+        <input type="hidden" id="hidden">
+        <input type="text" id="username" placeholder="Name">
+        <input type="text" id="useremail" placeholder="email">
+        <input type="text" id="userpassword" placeholder="password">
+        <input type="date" id="userbirthdate" placeholder="Birthdate">
+        <br>
+        <input type="button" value="Add User" id="addbtn" onclick="adduser()">
+    </form>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>password</th>
+                <th>Birthdate</th>
+                <th>Age</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="display">
+
+        </tbody>
+    </table>
+</div>
+    <script src="webapp.js"></script>
+</body>
+</html>

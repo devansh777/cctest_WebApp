@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="webapp.css">
+</head>
+<body onload="loadadminpage()">
+    
+    <div class='container'>
+        
+        hello,<p id="admin_name"></p>
+        
+        <a href="dashboard.html">DashBoard</a><br>
+        <a href="user.html" >Users</a><br>
+        <a href="usersession.html">Login Session</a><br>
+        <a href="login.html" onclick="sessionlog()">Logout</a><br>
+    </div>
+    <div class='users'>
+        <div class="less18">
+            Users < 18 Years
+            <p id="less18"></p>
+        </div>
+        <div class="less50">
+             18-50 Years Users
+             <p id="less50"></p>
+        </div>
+        <div class="grater50">
+            Users > 50 Years
+            <p id="grater50"></p>
+        </div>
+        <p id="birthday"></p>
+    </div>
+    <script src="webapp.js"></script>
+</body>
+</html>
