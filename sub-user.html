@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-</head>
-<body onload="logintime()">
-        
-        <a href="login.html" onclick="slog()">Logout</a><br>
+    <link rel="stylesheet" href="webapp.css" />
+  </head>
+  <body onload="logintime()">
+    <div class="usercontainer">
+      hello,<label id="admin_name"></label><br /><br />
+      <a href="login.html" onclick="slog()">Logout</a><br />
     </div>
+
+    <div id="userbirthday" class="userdashboard"></div>
     <script src="webapp.js"></script>
-</body>
+  </body>
 </html>
